@@ -3,6 +3,8 @@ import "dotenv/config";
 import connectDB from "./config/db";
 import apiRouter from "./routes/api";
 import cors from "cors";
+import "./cron/checkInactiveUsers"; 
+
  
 const app = express();
 // app.use(express.static("public"));
